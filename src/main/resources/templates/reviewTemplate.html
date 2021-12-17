@@ -2,21 +2,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${reviewModel.title}">Badass Review</title>
+    <link rel="stylesheet" href="/styles/style.css" />
 </head>
 <body>
-
-<header>
-    <h1 th:text="${reviewModel.title}">One Badass Review</h1>
+<nav class="header_nav">
+    <ul class="header_nav_list">
+        <li class="header_nav_listItem"><a href="/reviews">Compendium</a></li>
+    </ul>
+</nav>
+<header class="header">
+    <h1 th:text="${reviewModel.title}"></h1>
 </header>
 
+<div class="container">
 <main>
-    <ul>
-        <p><a href="/reviews">Reviews</a> </p>
-        <li th:text="${reviewModel.title}"></li>
-    </ul>
-    <h2 th:text="${reviewModel.content}"></h2>
-</main>
+    <figure class="image-url">
+        <img th:src="${reviewModel.imageUrl}" alt="" class="image-url-picture">
+    </figure>
 
+    <h2 class="rating" th:text="${reviewModel.rating}"></h2>
+    <p th:text="${reviewModel.content}"></p>
+    <div class="header_nav_list">
+      <a class="header_nav_listItem" th:href="${reviewModel.videoEvidence}">Video Evidence</a>
+    </div>
+</main>
+</div>
 <footer>
     <small>&copy 2020 WCCI</small>
 </footer>

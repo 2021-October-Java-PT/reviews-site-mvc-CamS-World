@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Badass Compendium</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
 </head>
+<div class="container">
 <body>
-<header>
-    <h1>Badass Review Compendium</h1>
+<header class="header">
+    <h1 class="header_title">The Badass Compendium</h1>
 </header>
 <main>
-    <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
-    </ul>
+    <div class="flexContainer">
+    <div class="flexItem" th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></div>
+    </div>
 </main>
 
 <footer>
-    <small>&copy WCCI 2020</small>
+    <small class="footer">&copy WCCI 2020</small>
 </footer>
 </body>
+</div>
 </html>
