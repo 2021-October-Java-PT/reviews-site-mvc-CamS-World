@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+html {
+  font: 18px/1.618 sans-serif;
+  font-family: "swap", sans-serif;
+  color: cornsilk;
+  background-color: #363940;
+}
+
+a {
+  color: #edd9ce;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  font: bold;
+  /* background-clip: border-box; */
+  background-clip: content-box;
+  border-style: groove;
+  border-color: #f7f4f2;
+}
+
+.container {
+  display: flex;
+  margin: 2rem auto;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+.header_nav_list {
+  display: flex;
+  justify-content: right;
+}
+
+.header_nav_listItem {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.header_nav_listItem:hover {
+  background: #2f51a1;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.header {
+  text-align: center;
+}
+
+.rating {
+  text-align: center;
+  background-color: red;
+  max-width: 100%;
+}
+
+.image-url {
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.image-url-picture {
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+  padding-left: 3rem;
+}
+
+.video-evidence {
+  text-align: start;
+  margin-top: 25px;
+}

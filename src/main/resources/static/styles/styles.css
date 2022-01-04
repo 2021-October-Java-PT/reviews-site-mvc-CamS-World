@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+.container {
+  background-image: url("action_movie.jpg");
+}
+
+a {
+  color: #584f6e;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  background-clip: content-box;
+  border-style: double;
+  border-color: #a66f51;
+}
+
+.header_title {
+  text-align: center;
+  font-family: "swap";
+}
+
+.flexContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  margin: 4rem auto;
+  padding: 11px;
+  max-width: 1000px;
+}
+
+.flexItem {
+  margin: 0.75rem auto;
+  padding: 1px;
+  max-width: 1000px;
+}
+
+.footer {
+  text-align: justify;
+}
